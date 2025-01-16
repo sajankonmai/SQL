@@ -1,5 +1,8 @@
-# This project utilizes following table 'superstore' and calculates statistics about the items and their prices.
+# Superstore
 
+This project utilizes following table **'superstore'** and calculates statistics about the items and their prices.
+
+```
 CREATE TABLE superstore (
     item_id INTEGER PRIMARY KEY,
     item_name TEXT,
@@ -28,34 +31,43 @@ VALUES
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
 -- © Copyright 2025 Break Into Tech  --
+```
 
-## SQL query to retrieve all data sorted by price in ascending order.
+#### SQL query to retrieve all data sorted by price in ascending order.
+```
 SELECT *
 FROM superstore
 ORDER BY price;
+```
 
-## SQL query to show the sum of the prices of all items.
+#### SQL query to show the sum of the prices of all items.
+```
 SELECT SUM(price)
 FROM superstore;
+```
 
-## SQL query to show the average price of all items.
+#### SQL query to show the average price of items.
+```
 SELECT AVG(price)
 FROM superstore;
+```
 
-## SQL query to show the minimum price of all items.
+#### SQL query to show the minimum price of items.
+```
 SELECT MIN(price)
 FROM superstore;
+```
 
-## SQL query to show the maximum price of all items.
-SELECT MAX(price)
-FROM superstore;
-
-## SQL query to show the maximum price of items in the 'Kitchen Supplies' category.
+#### SQL query to show the maximum price of items in the 'Kitchen Supplies' category.
+```
 SELECT MAX(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
+```
 
-## SQL query to show the stock quanitity of 'Premium Coffee Maker'.
+#### SQL query to show the stock quanitity of 'Premium Coffee Maker'.
+```
 SELECT stock_quantity
 FROM superstore
 WHERE item_name = 'Premium Coffee Maker'
+```
