@@ -69,5 +69,5 @@ WHERE category = 'Kitchen Supplies';
 ```
 SELECT stock_quantity
 FROM superstore
-WHERE item_name = 'Premium Coffee Maker'
+WHERE item_name = 'Premium Coffee Maker';
 ```
